@@ -1,9 +1,10 @@
 import '../styles/globals.css';
-import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
+import { ThirdwebProvider } from '@thirdweb-dev/react';
+import network from '../utils/network';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThirdwebProvider desiredChainId={ChainId.Goerli}>
+    <ThirdwebProvider desiredChainId={network}>
       <Component {...pageProps} />
     </ThirdwebProvider>
   );

@@ -71,7 +71,7 @@ export default function Header() {
 
         <button className="hidden sm:inline bg-blue-600 text-white px-5 md:px-10 py-2 border-2 border-blue-600 cursor-pointer">Search</button>
 
-        <Link href="/create">
+        <Link href="/listItem">
           <button className="border-2 border-blue-600 px-5 md:px-10 py-2 text-blue-600 hover:bg-blue-600/50 hover:text-white cursor-pointer">List Item</button>
         </Link>
       </section>
@@ -79,7 +79,9 @@ export default function Header() {
       <hr />
 
       <section className="flex items-center space-x-6 text-xs py-3 md:text-sm whitespace-nowrap justify-center px-6">
-        <p className="link">Home</p>
+        <Link href="/">
+          <p className="link">Home</p>
+        </Link>
         <p className="link">Electronics</p>
         <p className="link">Computers</p>
         <p className="link hidden xl:inline">Video Games</p>
