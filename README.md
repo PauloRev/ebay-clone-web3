@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="https://i.imgur.com/2Ie7am2.png" width="100px">
   <br/>
-  eBay Clone Web3
+  eBay Clone Web 3.0
 </h1>
 
 <p align="center">
@@ -18,7 +18,7 @@
 </p>
 
 <h4 align="center">
-  This is eBay Clone for Web3, a project where you can connect your wallet and create items, buy and auction NFT's with ThirdWeb.
+  This is eBay Clone for Web 3.0, a project where you can connect your wallet and create items, buy and auction NFT's with ThirdWeb.
 </h4>
 
 <p align="center">
