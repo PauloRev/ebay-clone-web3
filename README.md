@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  <img src="https://i.imgur.com/2Ie7am2.png" width="100px">
+  <br/>
+  eBay Clone Web3
+</h1>
 
-## Getting Started
+<p align="center">
+  <a href="https://ebay-clone-web3.vercel.app/">View Demo</a>
+</p>
 
-First, run the development server:
+<p align="center">
+  <br/>
+  <img src="https://img.shields.io/github/languages/top/PauloRev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/issues/PauloRev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/forks/PauloRev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/stars/PauloRev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/license/PauloRev/ebay-clone-web3">
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<h4 align="center">
+  This is eBay Clone for Web3, a project where you can connect your wallet and create items, buy and auction NFT's with ThirdWeb.
+</h4>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <a href="#technologies">Technologies</a> | <a href="#license">License</a>
+</p>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<img src="https://i.imgur.com/l34wOlc.png">
+<img src="https://i.imgur.com/6lE367S.png">
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technologies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This project was created with study purposes, with following technologies:
 
-## Learn More
+- [ReactJS](https://reactjs.org)
+- [NextJS](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [ThirdWeb](https://thirdweb.com/)
+- [Vercel](https://vercel.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. See [LICENSE](https://opensource.org/licenses/MIT) for more information.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+___
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with love by Paulo Henrique :wave: [Get in touch](https://github.com/PauloRev)
