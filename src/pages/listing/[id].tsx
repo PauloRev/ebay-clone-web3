@@ -17,6 +17,7 @@ import { ethers } from "ethers";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Countdown from 'react-countdown';
+import toast from "react-hot-toast";
 import Header from "../../components/Header";
 import network from "../../utils/network";
 
@@ -39,12 +40,7 @@ export default function Listing() {
   const networkingMismatch = useNetworkMismatch();
   const [, switchNetwork] = useNetwork();
 
-  const {
-    mutate: buyNow,
-    isLoading: isLoadingBuyNow,
-    error: errorBuyNow
-  } = useBuyNow(contract);
-
+  const { mutate: buyNow } = useBuyNow(contract);
   const { mutate: makeOffer } = useMakeOffer(contract);
   const { data: offers } = useOffers(contract, id);
   const { mutate: makeBid } = useMakeBid(contract);
@@ -96,13 +92,15 @@ export default function Listing() {
       type: listing.type
     }, {
       onSuccess: (data, variables, context) => {
-        alert('NFT bought successfully!');
-        console.log('SUCCESS ==> ', data, variables, context);
+        // alert('NFT bought successfully!');
+        toast.success('NFT bought successfully!');
+        // console.log('SUCCESS ==> ', data, variables, context);
         router.replace('/');
       },
       onError: (error, variables, context) => {
-        alert('ERROR: NFT could not be bought!');
-        console.log('ERROR ==> ', error, variables, context);
+        toast.error('ERROR: NFT could not be bought!');
+        // alert('ERROR: NFT could not be bought!');
+        // console.log('ERROR ==> ', error, variables, context);
       }
     });
   }
@@ -116,31 +114,33 @@ export default function Listing() {
 
       if (listing.type === ListingType.Direct) {
         if (listing.buyoutPrice.toString() === ethers.utils.parseEther(bidAmount).toString()) {
-          console.log('Buyout Price met, buying NFT...');
+          // console.log('Buyout Price met, buying NFT...');
           buyNft();
           return;
         }
 
-        console.log('Buyout price not met, making offer...');
+        // console.log('Buyout price not met, making offer...');
         await makeOffer({
           quantity: 1,
           listingId: id,
           pricePerToken: bidAmount
         }, {
           onSuccess(data, variables, context) {
-            alert('Offer made successfully!');
-            console.log('SUCCESS ==> ', data, variables, context);
+            toast.success('Offer made successfully!');
+            // alert('Offer made successfully!');
+            // console.log('SUCCESS ==> ', data, variables, context);
             setBidAmount('');
           },
           onError(error, variables, context) {
-            alert('ERROR: Offer could not be made!');
-            console.log('ERROR ==> ', error, variables, context);
+            toast.error('ERROR: Offer could not be made!');
+            // alert('ERROR: Offer could not be made!');
+            // console.log('ERROR ==> ', error, variables, context);
           }
         })
       }
 
       if (listing.type === ListingType.Auction) {
-        console.log('Making Bid...');
+        // console.log('Making Bid...');
 
         await makeBid(
           {
@@ -149,19 +149,21 @@ export default function Listing() {
           },
           {
             onSuccess(data, variables, context) {
-              alert('Bid made successfully!');
-              console.log('SUCCESS ==> ', data, variables, context);
+              toast.success('Bid made successfully!');
+              // alert('Bid made successfully!');
+              // console.log('SUCCESS ==> ', data, variables, context);
               setBidAmount('');
             },
             onError(error, variables, context) {
-              alert('ERROR: Bid could not be made!');
-              console.log('ERROR ==> ', error, variables, context);
+              toast.error('ERROR: Bid could not be made!');
+              // alert('ERROR: Bid could not be made!');
+              // console.log('ERROR ==> ', error, variables, context);
             }
           }
         )
       }
     } catch (err) {
-      console.error(err);
+      // console.error(err);
     }
   }
 
@@ -248,13 +250,15 @@ export default function Listing() {
                             addressOfOfferor: offer.offeror
                           }, {
                             onSuccess(data, variables, context) {
-                              alert('Offer accepted successfully!');
-                              console.log('SUCCESS ==> ', data, variables, context);
+                              toast.success('Offer accepted successfully!');
+                              // alert('Offer accepted successfully!');
+                              // console.log('SUCCESS ==> ', data, variables, context);
                               router.replace('/');
                             },
                             onError(error, variables, context) {
-                              alert('ERROR: Offer could not be accepted!');
-                              console.log('ERROR ==> ', error, variables, context);
+                              toast.error('ERROR: Offer could not be accepted!');
+                              // alert('ERROR: Offer could not be accepted!');
+                              // console.log('ERROR ==> ', error, variables, context);
                             }
                           })
                         }} className="p-2 w-32 bg-red-500/50 rounded-lg font-bold text-xs cursor-pointer">
