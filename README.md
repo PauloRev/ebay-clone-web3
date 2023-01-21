@@ -10,11 +10,11 @@
 
 <p align="center">
   <br/>
-  <img src="https://img.shields.io/github/languages/top/PauloRev/ebay-clone-web3">
-  <img src="https://img.shields.io/github/issues/PauloRev/ebay-clone-web3">
-  <img src="https://img.shields.io/github/forks/PauloRev/ebay-clone-web3">
-  <img src="https://img.shields.io/github/stars/PauloRev/ebay-clone-web3">
-  <img src="https://img.shields.io/github/license/PauloRev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/languages/top/paulhdev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/issues/paulhdev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/forks/paulhdev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/stars/paulhdev/ebay-clone-web3">
+  <img src="https://img.shields.io/github/license/paulhdev/ebay-clone-web3">
 </p>
 
 <h4 align="center">
@@ -45,4 +45,4 @@ This project is licensed under the MIT License. See [LICENSE](https://opensource
 
 ___
 
-Made with love by Paulo Henrique :wave: [Get in touch](https://github.com/PauloRev)
+Made with love by Paulo Henrique :wave: [Get in touch](https://github.com/paulhdev)
